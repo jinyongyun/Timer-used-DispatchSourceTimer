@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MineTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인하대학교 수강신청" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kus-NG-zxr">
+                                <rect key="frame" x="95" y="155" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S6e-zN-NQ0">
+                                <rect key="frame" x="61.333333333333343" y="291" width="267.33333333333326" height="198"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="nOm-cV-1cD"/>
+                                </constraints>
+                                <string key="text">컴공19진우성 화이팅
+의영이번에풀림?
+그다이만 존나 팬다
+2차 신청 올클 가즈아!!
+세바스 놓친 사람 나야 나
+올클- 졸업좀 하자 이제
+조중연 화이팅
+18아면 화석인가요
+너 왜 늦게 일어났냐
+공윤토 취소해</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="하고 싶은 이야기가 있다면..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OZJ-kL-GM5">
+                                <rect key="frame" x="102.66666666666667" y="497" width="184.66666666666663" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEG-qo-4Se">
+                                <rect key="frame" x="61.333333333333343" y="211.33333333333334" width="267.33333333333326" height="71.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPu-PH-nUQ">
+                                <rect key="frame" x="153.66666666666666" y="546" width="87.666666666666657" height="34.333333333333371"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="댓글등록"/>
+                                <connections>
+                                    <action selector="tapRegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h4h-Kj-9hp"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-Nj-a6K">
+                                <rect key="frame" x="35" y="569" width="320" height="216"/>
+                            </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="102" translatesAutoresizingMaskIntoConstraints="NO" id="3er-5I-in6">
+                                <rect key="frame" x="95.000000000000014" y="69" width="209.33333333333337" height="34.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqQ-7U-w5L">
+                                        <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="34.333333333333336"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="중지"/>
+                                        <connections>
+                                            <action selector="tapStopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kxy-j3-HYn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucp-DS-gsA">
+                                        <rect key="frame" x="155.66666666666666" y="0.0" width="53.666666666666657" height="34.333333333333336"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="시작"/>
+                                        <connections>
+                                            <action selector="tapStartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="34y-8i-siP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eEG-qo-4Se" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1dE-tG-ygc"/>
+                            <constraint firstItem="S6e-zN-NQ0" firstAttribute="top" secondItem="eEG-qo-4Se" secondAttribute="bottom" constant="8" id="2UO-1h-7qu"/>
+                            <constraint firstItem="OZJ-kL-GM5" firstAttribute="top" secondItem="S6e-zN-NQ0" secondAttribute="bottom" constant="8" id="BNa-0Q-4R0"/>
+                            <constraint firstItem="3er-5I-in6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="CPp-fK-jiV"/>
+                            <constraint firstItem="S6e-zN-NQ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IZB-b9-OCU"/>
+                            <constraint firstItem="ajs-Nj-a6K" firstAttribute="top" secondItem="OZJ-kL-GM5" secondAttribute="bottom" constant="38" id="JgC-gV-I3A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ajs-Nj-a6K" secondAttribute="bottom" constant="25" id="L1x-JR-HXa"/>
+                            <constraint firstItem="xPu-PH-nUQ" firstAttribute="top" secondItem="OZJ-kL-GM5" secondAttribute="bottom" constant="15" id="Q9d-hr-EiT"/>
+                            <constraint firstItem="xPu-PH-nUQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153.66666666666666" id="SzY-em-Vjf"/>
+                            <constraint firstItem="kus-NG-zxr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yms-GI-fzm"/>
+                            <constraint firstItem="S6e-zN-NQ0" firstAttribute="leading" secondItem="eEG-qo-4Se" secondAttribute="leading" id="ZFI-He-Ofj"/>
+                            <constraint firstItem="kus-NG-zxr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108" id="d2J-Ey-Whz"/>
+                            <constraint firstItem="xPu-PH-nUQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2.5" id="fa1-hU-hyB"/>
+                            <constraint firstItem="OZJ-kL-GM5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iiI-gG-way"/>
+                            <constraint firstItem="ajs-Nj-a6K" firstAttribute="centerX" secondItem="S6e-zN-NQ0" secondAttribute="centerX" id="jK9-CF-BRw"/>
+                            <constraint firstItem="3er-5I-in6" firstAttribute="centerX" secondItem="kus-NG-zxr" secondAttribute="centerX" constant="4.6666666666666856" id="xhI-8Q-ZfK"/>
+                            <constraint firstItem="ajs-Nj-a6K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zFM-vB-F1I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentText" destination="OZJ-kL-GM5" id="9Uj-69-WH4"/>
+                        <outlet property="commentView" destination="S6e-zN-NQ0" id="nlI-75-WQS"/>
+                        <outlet property="contentCommentView" destination="S6e-zN-NQ0" id="WbC-l7-Nd0"/>
+                        <outlet property="datePicker" destination="ajs-Nj-a6K" id="HLh-tt-sIA"/>
+                        <outlet property="registerButton" destination="xPu-PH-nUQ" id="tNp-cT-Mgi"/>
+                        <outlet property="startButton" destination="Ucp-DS-gsA" id="dxs-2r-nMz"/>
+                        <outlet property="stopButton" destination="RqQ-7U-w5L" id="0hl-Rg-bLq"/>
+                        <outlet property="timerLabel" destination="eEG-qo-4Se" id="QQc-ed-sbE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49" y="-40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
